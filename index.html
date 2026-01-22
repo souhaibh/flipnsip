@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flip n Sip Menu</title>
+
+  <style>
+    body {
+      margin: 0;
+    }
+
+    /* Loader */
+    #loader {
+      position: fixed;
+      inset: 0;
+      background: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+    }
+
+    #loader img {
+      width: 100%;
+      height: auto;
+    }
+
+    /* Content */
+    #content {
+      display: none;
+      width: 100%;
+    }
+
+    #content img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
+
+  <script>
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("content").style.display = "block";
+      }, 2000);
+    });
+  </script>
+</head>
+
+<body>
+  <div id="loader">
+    <img src="logoGif.GIF" alt="Loading">
+  </div>
+
+  <div id="content">
+    <img src="Brown and Black Illustration Fast Food Menu1.png" alt="Menu">
+  </div>
+</body>
