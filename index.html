@@ -12,9 +12,10 @@
 
     /* Loader */
     #loader {
-      position: fixed;
+      position: absolute;
       inset: 0;
-      background: #000000;
+      /* background:linear-gradient(45deg,#6AE9FD,#000,#6B299E); */
+      background-color: #000;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -22,20 +23,23 @@
     }
 
     #loader img {
-      width: 100%;
+      width: auto;
       height: auto;
     }
 
     /* Content */
     #content {
       display: none;
-      width: 100%;
+      background: #1C1C1C;
+      height: 100vh;
     }
 
     #content img {
       width: 100%;
       height: 100%;
-      display: block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   </style>
 
@@ -55,6 +59,6 @@
   </div>
 
   <div id="content">
-    <img src="Brown and Black Illustration Fast Food Menu1.png" alt="Menu">
+    <img src="menu.jpg" alt="Menu">
   </div>
 </body>
